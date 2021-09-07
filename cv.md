@@ -29,6 +29,7 @@
 - Completed the course "JS for layout designers", Dmitry Lavrik.
 - Completed the course "React JS - путь самурая", IT-Kamasutra.
 - Completed the course "HTML and SCC geekbrains".
+- Self-development.
 
 ### Education:
 
