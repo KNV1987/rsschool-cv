@@ -15,10 +15,12 @@
 
 ### Skills:
 
-- HTML, CSS.
-- JavaScript
-- React
-- Adobe Photoshop
+- HTML, CSS;
+- Sass, Scss;
+- JavaScript;
+- React;
+- Adobe Photoshop;
+- Figma.
 
 ### Sample code:
 
@@ -37,5 +39,5 @@
 
 ### Language:
 
-- English language A1
+- English language A2;
 - Russian language C.
