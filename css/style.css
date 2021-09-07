@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: RGB(44, 50, 61);
+  text-decoration: none;
+}
+.div-block {
+  margin: 0 auto;
+}
+.div-block1 {
+  float: left;
+  overflow: hidden;
+  background-color: RGB(240, 240, 240);
+}
+.div-block2 {
+  float: left;
+  background-color: RGB(44, 50, 61);
+  position: relative;
+  right: 60%;
+}
+.info {
+  position: relative;
+  left: 60%;
+  float: left;
+  width: 40%;
+  color: white;
+}
+.figure {
+  margin-top: 10%;
+  margin-bottom: 15%;
+  display: block;
+  text-align: center;
+}
+.figure .foto {
+  border-radius: 100%;
+  width: 60%;
+}
+
+li {
+  margin-top: 3%;
+  padding-left: 5%;
+  list-style-type: none;
+}
+li h3 {
+  margin: 0%;
+}
+li h4 {
+  margin: 0%;
+  font-style: italic;
+}
+.skills {
+  color: RGB(44, 50, 61);
+  float: left;
+  width: 60%;
+  position: relative;
+  left: 60%;
+}
+.skills h1 {
+  font-style: oblique;
+  font-size: 330%;
+  padding-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 25%;
+}
+h2 {
+  padding-left: 5%;
+}
+footer {
+  clear: both;
+  background-color: RGB(47, 79, 79);
+  padding-top: 2%;
+}
+.footer {
+  padding-left: 5%;
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+.footer a {
+  color: black;
+  font-size: 150%;
+  font-style: italic;
+}
