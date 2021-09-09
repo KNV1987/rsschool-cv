@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,26 +9,50 @@ a {
   color: RGB(44, 50, 61);
   text-decoration: none;
 }
-
-.name {
+.name__text {
   font-style: italic;
 }
-.div-block {
+.main__text h4 {
+  font-style: italic;
+}
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   max-width: 1200px;
-  background-color: RGB(240, 240, 240);
   margin: 0 auto;
 }
 .header {
+  background-color: RGB(220, 220, 220);
+}
+.header__menu {
+  display: flex;
+  justify-content: end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+.menu-item {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid RGBA(220, 220, 220, 0);
+  font-size: 24px;
+}
+
+.menu-item:hover {
+  border-bottom: 1px solid #000;
+}
+.name {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
   padding-bottom: 20px;
+  align-items: center;
 }
-.main {
+.main__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -33,12 +60,14 @@ a {
 .info {
   width: 30%;
   padding-right: 20px;
+  border-left: 1px solid black;
+  padding-left: 10px;
 }
-.foto {
+.photo {
   border-radius: 100%;
   width: 20%;
   min-width: 150px;
-  margin-right: 150px;
+  margin-right: 50px;
 }
 .skills {
   display: flex;
@@ -48,4 +77,20 @@ a {
   align-items: start;
   border-left: 1px solid black;
   width: 60%;
+}
+.link__project {
+  display: inline;
+  word-wrap: break-word;
+}
+.footer {
+  margin-top: 30px;
+  background-color: RGB(220, 220, 220);
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__rs {
+  width: 100px;
 }
