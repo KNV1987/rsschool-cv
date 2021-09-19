@@ -59,7 +59,7 @@ a {
 }
 .info {
   width: 30%;
-  padding-right: 20px;
+  padding-right: 30px;
   border-left: 1px solid black;
   padding-left: 10px;
 }
@@ -73,7 +73,7 @@ a {
   display: flex;
   justify-content: start;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 20px;
   align-items: start;
   border-left: 1px solid black;
   width: 60%;
@@ -93,4 +93,98 @@ a {
 }
 .logo__rs {
   width: 100px;
+}
+.burger__menu {
+  display: none;
+}
+.text__about {
+  font-style: italic;
+}
+.sample__progect {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.img__progect {
+  width: 100px;
+  height: 60px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+.sample__item {
+  list-style: none;
+}
+
+@media screen and (max-width: 575px) {
+  .header__menu {
+    display: none;
+  }
+  /*burger*/
+  .burger__menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  #menu__toggle {
+    position: fixed;
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > .bar2 {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  #menu__toggle:checked ~ .menu__btn > .bar2 {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .menu__box {
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    left: -100%;
+    top: -110px;
+    padding-right: 20px;
+    top: 20px;
+    width: 140px;
+    padding-left: 10px
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    top: 20px;
+    left: -100px;
+  }
+       
 }
